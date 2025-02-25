@@ -32,9 +32,8 @@
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 600;
-  line-height: 23px;
   text-align: center;
-  padding: 15px 25px;
+  padding: 15px 24px;
   border: none;
   margin-top: 30px;
 }
@@ -107,6 +106,9 @@ main > section {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+.team-img-container img {
+  width: 100%;
+}
 .our-features {
   max-width: 540px;
   margin-left: 75px;
@@ -118,6 +120,43 @@ main > section {
 }
 #quick-list {
   font-weight: 500;
+}
+/* feature section related style */
+.features {
+  gap: 140px;
+}
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding-left: 1.25rem;
+}
+.feature-card {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  margin-bottom: 1.25rem;
+}
+.feature-card .feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#experience-badge {
+  padding: 2.8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.featured-architect img {
+  width: 100%;
 }
 /* some fact section style */
 .facts-container {
@@ -161,6 +200,7 @@ main > section {
   grid-template-columns: repeat(5, 1fr);
   margin-top: 3.2rem;
   text-align: center;
+  justify-items: center;
 }
 .sponser-companies > img {
   filter: grayscale(100%);
@@ -168,7 +208,8 @@ main > section {
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .nav-item {
@@ -190,11 +231,24 @@ main > section {
   .our-features {
     margin-left: 20px;
   }
+  #experience-badge {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  #experience-year {
+    font-size: 1.5rem;
+  }
+  .features-section-container {
+    margin-bottom: -50px;
+  }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .our-features {
@@ -205,5 +259,21 @@ main > section {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     gap: 1.4rem;
+    justify-items: center;
+  }
+  .fact {
+    padding: 0.5rem 2.2rem;
+  }
+  .features-section-container {
+    margin-bottom: -100px;
+  }
+  #experience-badge {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 16px 26px;
+    font-size: 1.25rem;
+  }
+  #experience-year {
+    font-size: 2rem;
   }
 }
